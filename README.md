@@ -73,7 +73,7 @@ python scripts/embed_documents.py
 streamlit run app.py
 ```
 
-## Sample Sensor Data Format
+## 5. Sample Sensor Data Format
 
 ```
 timestamp,temperature,humidity,vibration,device_id
@@ -81,3 +81,16 @@ timestamp,temperature,humidity,vibration,device_id
 2025-08-01T10:05:00,36.1,52,0.03,AC001
 ...
 ```
+
+## 6. Demo Photos
+
+<img width="1810" height="723" alt="Screenshot 2025-08-03 155228" src="https://github.com/user-attachments/assets/720ef42c-3434-414d-9ef8-2925d3068856" />
+
+
+<img width="1843" height="853" alt="Screenshot 2025-08-03 155251" src="https://github.com/user-attachments/assets/c9ad4a7d-111e-4cf6-89ae-66764f97c058" />
+
+
+<img width="1858" height="444" alt="Screenshot 2025-08-03 155330" src="https://github.com/user-attachments/assets/963ad087-e729-4064-9d31-266a3725e384" />
+
+
+<img width="1823" height="675" alt="Screenshot 2025-08-03 155338" src="https://github.com/user-attachments/assets/d8d24bbc-7c3b-4f97-a600-2bd2d46530e0" />
