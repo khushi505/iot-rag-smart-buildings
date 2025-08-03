@@ -1,7 +1,8 @@
 # IoT Sensor RAG System for Smart Buildings
 
-A Retrieval-Augmented Generation (RAG) system that uses IoT sensor data, maintenance manuals, and building specifications to provide predictive maintenance insights and operational optimization.
+This project is an AI-powered Retrieval-Augmented Generation (RAG) system that provides intelligent assistance for smart building operations by integrating IoT sensor data and contextual document-based knowledge.
 
+The system enables facility managers to query the system in natural language and receive relevant, document-grounded responses powered by semantic search and large language models. It also detects sentiment and flags escalations in user queries to prioritize urgent issues.
 ---
 
 ## Deployed Link
@@ -17,6 +18,7 @@ https://khushi505-iot-rag-smart-buildings-app-68ni6q.streamlit.app/
 - GPT-based synthesis of answers from retrieved chunks *(optional)*
 - Real-time sensor monitoring via file changes *(optional)*
 - User feedback collection via thumbs up/down
+- Deployed via Streamlit UI for seamless interaction
 
 ---
 
