@@ -16,8 +16,10 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Load and chunk documents from both manuals and specs folders
 manual_chunks = load_and_chunk_documents("data/manuals")
-spec_chunks = load_and_chunk_documents("data/specs")
-all_chunks = manual_chunks + spec_chunks
+# spec_chunks = load_and_chunk_documents("data/specs")
+# all_chunks = manual_chunks + spec_chunks
+
+all_chunks = manual_chunks  # For now, only using manuals
 
 # Prepare content and metadata for embedding
 texts = [chunk["content"] for chunk in all_chunks]

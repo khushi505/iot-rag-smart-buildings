@@ -12,8 +12,10 @@ from scripts.chunking import load_and_chunk_documents  # Adjust import if needed
 def initialize_embeddings():
     # Load and chunk documents from both manuals and specs folders
     manual_chunks = load_and_chunk_documents("data/manuals")
-    spec_chunks = load_and_chunk_documents("data/specs")
-    all_chunks = manual_chunks + spec_chunks
+    # spec_chunks = load_and_chunk_documents("data/specs")
+    # all_chunks = manual_chunks + spec_chunks
+
+    all_chunks = manual_chunks  # For now, only using manuals
 
     texts = [chunk["content"] for chunk in all_chunks]
     metadatas = [{"source": chunk["source"]} for chunk in all_chunks]
