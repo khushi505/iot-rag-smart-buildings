@@ -4,6 +4,10 @@ A Retrieval-Augmented Generation (RAG) system that uses IoT sensor data, mainten
 
 ---
 
+## Deployed Link
+
+https://khushi505-iot-rag-smart-buildings-app-68ni6q.streamlit.app/
+
 ## Features
 
 - Upload IoT sensor data (.csv)
