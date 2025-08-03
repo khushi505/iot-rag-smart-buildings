@@ -2,7 +2,6 @@ streamlit
 pandas
 numpy
 PyMuPDF
-chromadb
+chromadb==1.0.15
 sentence-transformers
 scikit-learn
-pysqlite3-binary
