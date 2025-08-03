@@ -1,8 +1,6 @@
 # IoT Sensor RAG System for Smart Buildings
 
-This project is an AI-powered Retrieval-Augmented Generation (RAG) system that provides intelligent assistance for smart building operations by integrating IoT sensor data and contextual document-based knowledge.
-
-The system enables facility managers to query the system in natural language and receive relevant, document-grounded responses powered by semantic search and large language models. It also detects sentiment and flags escalations in user queries to prioritize urgent issues.
+This project is a lightweight document-aware support system for smart building operations. It allows facility managers to ask questions in natural language and returns relevant context snippets from uploaded building documents using semantic similarity search.
 ---
 
 ## Deployed Link
