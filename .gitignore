@@ -17,6 +17,8 @@ env/
 #  Vector DB (Chroma, FAISS)
 embeddings/vector_store/
 db/
+data/sensor_data.csv
+
 
 #  VS Code settings
 .vscode/

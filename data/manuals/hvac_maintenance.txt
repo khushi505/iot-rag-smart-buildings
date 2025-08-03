@@ -1,0 +1,7 @@
+If the temperature of the HVAC unit exceeds 35°C, this may indicate possible overheating.
+Recommended checks include:
+- Inspect air filters for clogging.
+- Examine coolant levels in the compressor system.
+- Inspect belts and bearings for signs of wear.
+- Make sure the ventilation system is not blocked.
+In case of vibrations over 0.15, check motor alignment and loose parts.
