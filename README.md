@@ -1,7 +1,6 @@
 # IoT Sensor RAG System for Smart Buildings
 
 This project is a lightweight document-aware support system for smart building operations. It allows facility managers to ask questions in natural language and returns relevant context snippets from uploaded building documents using semantic similarity search.
----
 
 ## Deployed Link
 
