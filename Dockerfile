@@ -1,5 +1,5 @@
 # Use Python 3.10 with latest SQLite support
-FROM python:3.10-slim
+FROM python:3.12.10
 
 # Set working directory
 WORKDIR /app
@@ -13,10 +13,10 @@ COPY . .
 
 # Streamlit environment setup
 ENV PYTHONUNBUFFERED=1
-ENV STREAMLIT_PORT=7860
+ENV STREAMLIT_PORT=8080
 
 # Expose default port
-EXPOSE 7860
+EXPOSE 8080
 
 # Launch Streamlit app
-CMD ["streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]

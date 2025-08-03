@@ -3,17 +3,26 @@
 import streamlit as st
 import pandas as pd
 from scripts.predict_maintenance import load_sensor_data, detect_anomalies
-from scripts.retrieve import retrieve_relevant_chunks
+from scripts.retrieve import retrieve_relevant_chunks, add_documents
 
-import sys
+# --- Add these lines to load and embed documents at startup ---
+from scripts.chunking import load_and_chunk_documents  # Adjust import if needed
 
-print("Python version")
-print(sys.version)
+@st.cache_resource(show_spinner="Loading and embedding documents...")
+def initialize_embeddings():
+    # Load and chunk documents from both manuals and specs folders
+    manual_chunks = load_and_chunk_documents("data/manuals")
+    spec_chunks = load_and_chunk_documents("data/specs")
+    all_chunks = manual_chunks + spec_chunks
 
-# If you want it split into major, minor, and micro:
-print("Version info:")
-print(sys.version_info)
+    texts = [chunk["content"] for chunk in all_chunks]
+    metadatas = [{"source": chunk["source"]} for chunk in all_chunks]
+    ids = [chunk["chunk_id"] for chunk in all_chunks]
 
+    add_documents(texts, metadatas, ids)
+
+initialize_embeddings()
+# --- End embedding initialization ---
 
 st.set_page_config(page_title="Smart Building RAG Assistant", layout="wide")
 st.title("🏢 IoT Sensor RAG Assistant for Smart Buildings")
