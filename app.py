@@ -5,6 +5,16 @@ import pandas as pd
 from scripts.predict_maintenance import load_sensor_data, detect_anomalies
 from scripts.retrieve import retrieve_relevant_chunks
 
+import sys
+
+print("Python version")
+print(sys.version)
+
+# If you want it split into major, minor, and micro:
+print("Version info:")
+print(sys.version_info)
+
+
 st.set_page_config(page_title="Smart Building RAG Assistant", layout="wide")
 st.title("🏢 IoT Sensor RAG Assistant for Smart Buildings")
 
