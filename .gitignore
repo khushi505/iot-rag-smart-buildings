@@ -1,0 +1,42 @@
+#  Python
+__pycache__/
+*.py[cod]
+*.log
+*.sqlite3
+*.db
+*.pkl
+*.h5
+*.egg-info/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+#  Vector DB (Chroma, FAISS)
+embeddings/vector_store/
+db/
+
+#  VS Code settings
+.vscode/
+
+#  OS & Editor files
+.DS_Store
+Thumbs.db
+
+#  Streamlit or Gradio config
+.streamlit/
+
+#  Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+#  Logs or generated data
+*.csv
+*.json
+logs/
+*.bak
+
+#  Secrets or envs
+.env
+.env.*
